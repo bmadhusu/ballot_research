@@ -1,0 +1,33 @@
+Find newspaper websites, government websites, and organizational websites to determine what stances or recommendations were taken and by whom on the proposal. Also do the same for prominent individuals (including politicians currently in office and former politicians) that commented on these proposals. 
+
+For each source you find, determine whether individuals or organizations on that webpage recommend voting Yes or No. Do not summarize their arguments. You must include the source URLs in your response.
+
+IMPORTANT RULES:
+- If an organization has taken a position, ONLY include the organization, NOT individual spokespersons/directors/staff representing that organization
+- Only include individuals if they are speaking in their own capacity (elected officials, independent experts, etc.)
+- Avoid duplicate entries - each unique entity should appear only once
+- For each source that mentions positions, extract all relevant entities
+- If you come across Ballotpedia as a search result, use the Support and Opposition sections to find additional links to search; do NOT use Ballotpedia itself as a source
+- If you come across Wikipedia as a search result, use the endorsements sections to find additional links to search; do NOT use Wikipedia itself as a source
+- If you come across nycvotes.org as a search result, and if there is a Summary of Statements section, use that to discern endorsements or opposition to the proposal  
+- Do not use Reddit as a source
+
+For each entity, provide a JSON list with objects containing:
+{
+  "Source": "source website name",
+  "URL": "source URL",
+  "Proposal": 1,
+  "Entity": "person or organization name",
+  "Description": "brief description (do NOT include organizational affiliation for individuals if that org is also listed)",
+  "Type": "Individual or Organization",
+  "Position": "Yes or No"
+}
+
+Examples:
+✓ Good: Include "Protect the Adirondacks" (Organization) 
+✗ Bad: Also include "Claudia Braymer, Executive Director of Protect the Adirondacks" (Individual)
+
+✓ Good: Include "Senator Pete Harckham" (Individual speaking as elected official)
+✓ Good: Include "New York League of Conservation Voters" (Organization)
+
+Only output the json; No other commentary is needed or wanted.

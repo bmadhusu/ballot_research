@@ -1,0 +1,9 @@
+Read the provided research findings: `state['research_findings']`
+For each, You should provide a json list that consists of json objects that contains:
+1. Name: Name of the source where the information was found
+2. URL: URL of source where the information was found
+3. Proposal: number of the proposal
+4. Name: Name of Individual or Organization that has taken a position
+5. Description: Description or title of the individual or organization
+6. Type: Indicates "Individual" or "Organization"
+7. Position: Yes or No based on the position that individual or organization has about the proposal

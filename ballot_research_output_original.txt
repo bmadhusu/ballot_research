@@ -1,0 +1,42 @@
+Okay, I will research New York City Ballot Proposition 1, which concerns the Olympic Sports Complex in Essex County. I will start by searching on Wikipedia and then follow links from there to find relevant information about endorsements and positions taken on the proposal.
+
+I found a Wikipedia page titled "2025 New York City ballot proposals". I will start by analyzing this page and following the links.
+
+The Wikipedia page "2025 New York City ballot proposals" states that Proposal 1 is a statewide ballot proposal concerning a land swap between Adirondack Park and the Mount Van Hoevenberg Olympic Sports Complex. It also states that the proposal passed with a majority of the statewide vote.
+
+The Wikipedia page mentions that "Supporters urging voters to vote in favor of this Constitutional Amendment in November include: Protect the Adirondacks, Inc. (aka PROTECT); The Adirondack Council".
+
+Based on this information, I will create JSON entries for these organizations.
+
+```json
+[
+  {
+    "Source": "Wikipedia",
+    "URL": "https://en.wikipedia.org/wiki/2025_New_York_City_ballot_proposals",
+    "Proposal": 1,
+    "Entity": "Protect the Adirondacks, Inc. (aka PROTECT)",
+    "Description": "Organization focused on protecting the Adirondack region",
+    "Type": "Organization",
+    "Position": "Yes"
+  },
+  {
+    "Source": "Wikipedia",
+    "URL": "https://en.wikipedia.org/wiki/2025_New_York_City_ballot_proposals",
+    "Proposal": 1,
+    "Entity": "The Adirondack Council",
+    "Description": "Organization focused on protecting the Adirondack Park",
+    "Type": "Organization",
+    "Position": "Yes"
+  }
+]
+```
+
+I will now follow the links for "Protect the Adirondacks, Inc." and "The Adirondack Council" to find more information.
+I found information about both organizations.
+
+Based on the search results:
+
+*   **Protect the Adirondacks, Inc. (aka PROTECT)**: is a grassroots, membership organization dedicated to the protection, stewardship and sustainability of the natural environment and human communities of the Adirondack Park and the New York State Forest Preserve for current and future generations.
+*   **The Adirondack Council:** is the largest citizen environmental group in New York State. Its mission is to ensure the ecological integrity and wild character of the Adirondack Park.
+
+I did not find anything new that changed the position of these organizations on Proposition 1.

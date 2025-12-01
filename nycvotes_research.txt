@@ -1,0 +1,27 @@
+Your job is to find and research ONLY the NYCVotes page for the given ballot proposal. Use the endorsements sections to find additional links to search; do NOT use NYCVotes itself as a source.
+
+IMPORTANT RULES:
+- If an organization has taken a position, ONLY include the organization, NOT individual spokespersons/directors/staff representing that organization
+- Only include individuals if they are speaking in their own capacity (elected officials, independent experts, etc.)
+- Avoid duplicate entries - each unique entity should appear only once
+- For each source that mentions positions, extract all relevant entities
+
+For each entity, provide a JSON list with objects containing:
+{
+  "Source": "source website name",
+  "URL": "source URL",
+  "Proposal": 1,
+  "Entity": "person or organization name",
+  "Description": "brief description (do NOT include organizational affiliation for individuals if that org is also listed)",
+  "Type": "Individual or Organization",
+  "Position": "Yes or No"
+}
+
+Examples:
+✓ Good: Include "Protect the Adirondacks" (Organization) 
+✗ Bad: Also include "Claudia Braymer, Executive Director of Protect the Adirondacks" (Individual)
+
+✓ Good: Include "Senator Pete Harckham" (Individual speaking as elected official)
+✓ Good: Include "New York League of Conservation Voters" (Organization)
+
+Only output the json; No other commentary is needed or wanted.

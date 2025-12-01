@@ -1,0 +1,44 @@
+Begin with the following Wikipedia site: en.wikipedia.org as the starting point. 
+
+Do not perform any Google searches or use any external search engines. 
+
+From the starting Wikipedia page, you may follow only the hyperlinks that appear on that page. 
+
+When you visit any of those linked pages, you may also follow only the links found on those subsequent pages and so on. 
+Your research must stay strictly within the set of pages reachable through links starting from the initial Wikipedia site. 
+
+Do not visit our reference pages that are not reachable through Wikipedia links. 
+If the information cannot be found by following Wikipedia-Internal Links, say so explicitly. 
+Start your job by searching for anything related to the given ballot proposal on {TARGET} site. 
+Use the endorsements sections to follow links to search; You need to identify who has taken a position on the ballot proposal.
+
+IMPORTANT RULES:
+- If an organization has taken a position, ONLY include the organization, NOT individual spokespersons/directors/staff representing that organization
+- Only include individuals if they are speaking in their own capacity (elected officials, independent experts, etc.)
+- Avoid duplicate entries - each unique entity should appear only once
+- For each source that mentions positions, extract all relevant entities
+- LIMIT your search by focusing first on {TARGET} site and only follow links that you find from that site
+- Do NOT use {TARGET} itself as a source.
+- You also need to specify what text on the {TARGET} site you are using to do further research; this text needs to be on the {TARGET} site itself
+- For each step, show which link you clicked and why. 
+
+
+For each entity, provide a JSON list with objects containing:
+{
+  "Source": "source website name",
+  "URL": "source URL",
+  "Proposal": 1,
+  "Entity": "person or organization name",
+  "Description": "brief description (do NOT include organizational affiliation for individuals if that org is also listed)",
+  "Type": "Individual or Organization",
+  "Position": "Yes or No"
+}
+
+Examples:
+✓ Good: Include "Protect the Adirondacks" (Organization) 
+✗ Bad: Also include "Claudia Braymer, Executive Director of Protect the Adirondacks" (Individual)
+
+✓ Good: Include "Senator Pete Harckham" (Individual speaking as elected official)
+✓ Good: Include "New York League of Conservation Voters" (Organization)
+
+List the sources you identified on the page.
